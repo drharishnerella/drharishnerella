@@ -81,9 +81,9 @@ nav a:hover{
 }
 
 .hero-content{
-    display:grid;
-    grid-template-columns:1fr 1fr;
+    display:flex;
     align-items:center;
+    justify-content:space-between;
     gap:50px;
 }
 
@@ -174,8 +174,10 @@ footer a{
 @media(max-width:768px){
 
 .hero-content{
-grid-template-columns:1fr;
-text-align:center;
+display:flex;
+align-items:center;
+justify-content:space-between;
+gap:50px;
 }
 
 .hero h1{
