@@ -353,14 +353,18 @@ Get Directions
 
 
 <script type="application/ld+json">
-
 {
 "@context":"https://schema.org",
-"@type":"Physician",
-"name":"Dr. Harish Nerella",
+"@graph":[
+
+{
+"@type":"MedicalClinic",
+"name":"Dr. Harish Nerella MD",
 "url":"https://drharishnerella.com/",
 "telephone":"+919667079999",
+"priceRange":"$$",
 "medicalSpecialty":"Internal Medicine",
+
 "address":{
 "@type":"PostalAddress",
 "streetAddress":"Plot No. 296, Vijaya Sreedhar Tara Arcade Complex, Golden Temple Lane, Secretariat Colony, Puppalaguda",
@@ -369,6 +373,7 @@ Get Directions
 "postalCode":"500089",
 "addressCountry":"IN"
 },
+
 "openingHoursSpecification":{
 "@type":"OpeningHoursSpecification",
 "dayOfWeek":[
@@ -381,9 +386,85 @@ Get Directions
 ],
 "opens":"07:30",
 "closes":"21:30"
+},
+
+"areaServed":[
+"Manikonda",
+"Puppalaguda",
+"Hyderabad"
+]
+
+},
+
+
+{
+"@type":"Physician",
+"name":"Dr. Harish Nerella",
+"medicalSpecialty":"Internal Medicine",
+"url":"https://drharishnerella.com/"
+},
+
+
+{
+"@type":"FAQPage",
+"mainEntity":[
+
+{
+"@type":"Question",
+"name":"Who is a General Physician?",
+"acceptedAnswer":{
+"@type":"Answer",
+"text":"A General Physician provides diagnosis and treatment for common illnesses, infections, chronic conditions and preventive healthcare needs."
+}
+},
+
+{
+"@type":"Question",
+"name":"When should I visit a General Physician?",
+"acceptedAnswer":{
+"@type":"Answer",
+"text":"You should consult a General Physician for fever, infections, weakness, diabetes management, blood pressure problems and regular health checkups."
+}
+},
+
+{
+"@type":"Question",
+"name":"Is Dr. Harish Nerella available in Manikonda?",
+"acceptedAnswer":{
+"@type":"Answer",
+"text":"Yes, Dr. Harish Nerella provides general physician consultation services for patients in Manikonda, Puppalaguda and nearby Hyderabad areas."
 }
 }
 
+]
+
+},
+
+
+{
+"@type":"BreadcrumbList",
+"itemListElement":[
+
+{
+"@type":"ListItem",
+"position":1,
+"name":"Home",
+"item":"https://drharishnerella.com/"
+},
+
+{
+"@type":"ListItem",
+"position":2,
+"name":"General Physician in Manikonda",
+"item":"https://drharishnerella.pages.dev/general-physician-in-manikonda/"
+}
+
+]
+
+}
+
+]
+}
 </script>
 
 
